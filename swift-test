@@ -1,0 +1,11 @@
+
+
+#ADLB_PERF_COUNTERS=1 \
+#ADLB_TRACE=true \ # doesn't work
+#ADLB_DEBUG=true \ # doesn't work
+#TURBINE_LOG_FILE=turbine.log \  # in testing, not all activity is saved to the file, lock issue ?
+
+TURBINE_LOG=1 \
+ADLB_PRINT_TIME=1 \
+  swift-t -n 4  mywrap.swift
+
